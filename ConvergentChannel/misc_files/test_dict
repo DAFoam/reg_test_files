@@ -1,0 +1,54 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "misc_files";
+    object      test_dict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+ofOptions
+{
+    key0            2;
+    key1            1;
+    key2            2.5;
+    key3            test;
+    key4            1;
+    key5            2 ( 1 2 );
+    key6            2 ( 2.1 3.2 );
+    key7            2 ( test1 test2 );
+    key8            2 ( 0 1 );
+    key9            2 ( 2 ( 1 2 ) 2 ( 3 4 ) );
+    key10           2 ( 2 ( 1.2 2.1 ) 2 ( 3.4 4.3 ) );
+    key11
+    {
+        subKey1         1;
+        subKey2         2.5;
+        subKey3         test;
+        subKey4         0;
+        subKey5         2 ( 1 2 );
+        subKey6         2 ( 3.5 4.1 );
+        subKey7         2 ( test1 test2 );
+        subKey8
+        {
+            subSubKey1      1;
+            subSubKey2      2.5;
+            subSubKey3      test;
+            subSubKey4      0;
+            subSubKey5      2 ( 1 2 );
+            subSubKey6      2 ( 3.5 4.1 );
+            subSubKey7      2 ( test1 test2 );
+        }
+    }
+}
+
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
