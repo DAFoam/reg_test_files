@@ -15,7 +15,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-5
+3
 (
     inlet
     {
@@ -33,22 +33,8 @@ FoamFile
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          49;
+        nFaces          196;
         startFace       980;
-    }
-    wallsbump
-    {
-        type            wall;
-        inGroups        1(wall);
-        nFaces          49;
-        startFace       1029;
-    }
-    frontandback
-    {
-        type            wall;
-        inGroups        1(wall);
-        nFaces          98;
-        startFace       1078;
     }
 )
 
