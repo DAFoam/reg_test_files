@@ -67,14 +67,14 @@ PIMPLE
 {
     nNonOrthogonalCorrectors 0;
     nCorrectors         2;
-    nOuterCorrectors 100;
+    nOuterCorrectors 20;
 
     residualControl
     {
         "(U|T|e|h|nuTilda|k|omega|epsilon|p|p_rgh|G)" 
         {
-            tolerance       1e-8; 
-            relTol          1e-8; 
+            tolerance       1e-5; 
+            relTol          1e-5; 
         } 
     }
 }

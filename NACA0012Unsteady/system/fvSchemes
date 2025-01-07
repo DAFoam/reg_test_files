@@ -17,7 +17,7 @@ FoamFile
 
 ddtSchemes
 {
-    default         Euler;
+    default         backward;
 }
 
 gradSchemes
@@ -28,7 +28,7 @@ gradSchemes
 divSchemes
 {
     default                                             none;
-    div(phi,U)                                          bounded Gauss upwind;
+    div(phi,U)                                          bounded Gauss linearUpwindV grad(U);
     div(phi,T)                                          bounded Gauss upwind;
     div(phi,nuTilda)                                    bounded Gauss upwind;
     div(phi,gammaInt)                                    bounded Gauss upwind;
