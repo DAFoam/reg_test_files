@@ -27,6 +27,6 @@ writePrecision  16;
 writeCompression on;
 timeFormat      general;
 timePrecision   10;
-runTimeModifiable true;
+runTimeModifiable false;
 
 

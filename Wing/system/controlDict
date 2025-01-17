@@ -27,7 +27,7 @@ writePrecision  10;
 writeCompression on;
 timeFormat      general;
 timePrecision   8;
-runTimeModifiable true;
+runTimeModifiable false;
 
 DebugSwitches
 {
