@@ -1,10 +1,10 @@
-/*--------------------------------*- C++ -*----------------------------------*\
-| =========                 |                                                 |
-| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  v1812                                 |
-|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
-|    \\/     M anipulation  |                                                 |
-\*---------------------------------------------------------------------------*/
+/*--------------------------------*- C++ -*---------------------------------*\ 
+| ========                 |                                                 | 
+| \      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           | 
+|  \    /   O peration     | Version:  v1812                                 | 
+|   \  /    A nd           | Web:      www.OpenFOAM.com                      | 
+|    \/     M anipulation  |                                                 | 
+\*--------------------------------------------------------------------------*/ 
 FoamFile
 {
     version     2.0;
@@ -17,11 +17,8 @@ FoamFile
 
 SIMPLE
 {
-    transonic                          false;
-    nNonOrthogonalCorrectors           0;
-    pRefCell                           0;
     consistent                         false;
-    pRefValue                          0;
+    nNonOrthogonalCorrectors           0;
     residualControl
     {
         U                              1.000000e-20;
@@ -38,31 +35,9 @@ SIMPLE
     }
 }
 
-PISO
-{
-    pRefCell                           0;
-    nCorrectors                        2;
-    pRefValue                          0;
-    nNonOrthogonalCorrectors           0;
-}
-
 solvers
 {
-    "(p|p_rgh)"
-    {
-        relTol                         0.1;
-        nPreSweeps                     0;
-        nCellsInCoarsestLevel          10;
-        agglomerator                   faceAreaPair;
-        maxIter                        20;
-        solver                         GAMG;
-        tolerance                      1e-20;
-        smoother                       GaussSeidel;
-        cacheAgglomeration             true;
-        mergeLevels                    1;
-        nPostSweeps                    2;
-    }
-    "(p|p_rgh)Final"
+    "(p|p_rgh|G)Final"
     {
         relTol                         0;
         nPreSweeps                     0;
@@ -88,15 +63,6 @@ solvers
         smoother                       DIC;
         tolerance                      1e-6;
     }
-    "(U|T|e|h|nuTilda|k|omega|epsilon|ReThetat|gammaInt)"
-    {
-        relTol                         0.1;
-        nSweeps                        1;
-        solver                         smoothSolver;
-        smoother                       GaussSeidel;
-        maxIter                        20;
-        tolerance                      1e-20;
-    }
     "(U|T|e|h|nuTilda|k|omega|epsilon|ReThetat|gammaInt)Final"
     {
         relTol                         0;
@@ -106,6 +72,29 @@ solvers
         maxIter                        500;
         tolerance                      1e-06;
     }
+    "(U|T|e|h|nuTilda|k|omega|epsilon|ReThetat|gammaInt)"
+    {
+        relTol                         0.1;
+        nSweeps                        1;
+        solver                         smoothSolver;
+        smoother                       GaussSeidel;
+        maxIter                        10;
+        tolerance                      1e-20;
+    }
+    "(p|p_rgh|G)"
+    {
+        relTol                         0.1;
+        nPreSweeps                     0;
+        nCellsInCoarsestLevel          10;
+        agglomerator                   faceAreaPair;
+        maxIter                        10;
+        solver                         GAMG;
+        tolerance                      1e-20;
+        smoother                       GaussSeidel;
+        cacheAgglomeration             true;
+        mergeLevels                    1;
+        nPostSweeps                    2;
+    }
 }
 
 relaxationFactors
@@ -113,24 +102,21 @@ relaxationFactors
     fields
     {
         p                              0.30;
-        p_rgh                          0.30;
-        rho                            0.30;
     }
     equations
     {
-        ReThetat                       0.70;
         U                              0.70;
         T                              0.70;
-        h                              0.70;
         nuTilda                        0.70;
-        epsilon                        0.70;
         k                              0.70;
         omega                          0.70;
-        e                              0.70;
+        epsilon                        0.70;
         gammaInt                       0.70;
+        ReThetat                       0.70;
     }
 
 }
+
 potentialFlow
 {
     nNonOrthogonalCorrectors           20;
@@ -138,11 +124,5 @@ potentialFlow
     PhiRefValue                        0;
 }
 
-stressAnalysis
-{
-    compactNormalStress                yes;
-    nCorrectors                        1;
-    D                                  1e-20;
-}
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

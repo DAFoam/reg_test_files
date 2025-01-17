@@ -9,32 +9,33 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       dictionary;
-    location    "system";
-    object      controlDict;
+    class       volScalarField;
+    location    "0";
+    object      alphat;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+dimensions      [1 -1 -1 0 0 0 0];
 
-application     simpleFoam;
-startFrom       startTime;
-startTime       0;
-stopAt          endTime;
-endTime         2000;
-deltaT          1;
-writeControl    timeStep;
-writeInterval   2000;
-purgeWrite      0;
-writeFormat     ascii;
-writePrecision  16;
-writeCompression on;
-timeFormat      general;
-timePrecision   8;
-runTimeModifiable false;
+internalField   uniform 1.5e-4;
 
-DebugSwitches
+boundaryField
 {
-    SolverPerformance 0;
+    inlet
+    {
+        type            calculated;
+        value           $internalField;
+    }
+    outlet
+    {
+        type            zeroGradient;
+    }
+    walls
+    {
+        type            fixedValue;
+        value           uniform 1e-16;
+    }
 }
 
-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// ************************************************************************* //

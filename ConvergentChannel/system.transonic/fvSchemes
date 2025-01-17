@@ -28,15 +28,19 @@ gradSchemes
 divSchemes
 {
     default                                             none;
-    div(phi,U)                                          bounded Gauss linearUpwindV grad(U);
+    div(phi,U)                                          Gauss linearUpwindV grad(U);
+    div(phi,e)                                          Gauss upwind;
     div((nuEff*dev2(T(grad(U)))))                       Gauss linear;
-    div(pc)                                             bounded Gauss upwind;
-    div(phi,nuTilda)                                    bounded Gauss upwind;
+    div(phi,h)                                          Gauss upwind;
+    div(phid,p)                                         Gauss limitedLinear 1.0;
+    div(((rho*nuEff)*dev2(T(grad(U)))))                 Gauss linear;
+    div(phi,nuTilda)                                    Gauss upwind;
+    div(phi,K)                                          Gauss upwind;
+    div(phi,Ekp)                                        Gauss upwind;
+    div(pc)                                             Gauss upwind;
     div(phi,k)                                          bounded Gauss upwind;
     div(phi,omega)                                      bounded Gauss upwind;
     div(phi,epsilon)                                    bounded Gauss upwind;
-    div(phi,gammaInt)                                   bounded Gauss upwind;
-    div(phi,ReThetat)                                   bounded Gauss upwind;
 }
 
 interpolationSchemes
@@ -58,6 +62,7 @@ fluxRequired
 {
     default                                             no;
     p;
+    p_rgh;
     Phi;
 }
 
