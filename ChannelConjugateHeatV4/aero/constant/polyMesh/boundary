@@ -1,0 +1,88 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1812                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+10
+(
+    cold_air_out
+    {
+        type            patch;
+        nFaces          64;
+        startFace       6912;
+    }
+    cold_air_in
+    {
+        type            patch;
+        nFaces          64;
+        startFace       6976;
+    }
+    cold_air_outer
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          160;
+        startFace       7040;
+    }
+    cold_air_inner
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          160;
+        startFace       7200;
+    }
+    cold_air_sides
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          320;
+        startFace       7360;
+    }
+    hot_air_in
+    {
+        type            patch;
+        nFaces          64;
+        startFace       7680;
+    }
+    hot_air_out
+    {
+        type            patch;
+        nFaces          64;
+        startFace       7744;
+    }
+    hot_air_outer
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          160;
+        startFace       7808;
+    }
+    hot_air_inner
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          160;
+        startFace       7968;
+    }
+    hot_air_sides
+    {
+        type            wall;
+        inGroups        1(wall);
+        nFaces          320;
+        startFace       8128;
+    }
+)
+
+// ************************************************************************* //
