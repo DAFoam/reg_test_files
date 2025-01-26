@@ -31,12 +31,12 @@ boundaryField
     {
         type            zeroGradient;
     }
-    "(bot|top)"
+    bot
     {
         type            omegaWallFunction;
         value           $internalField;
     }
-    "sym.*"
+    "(sym.*|top)"
     {
         type symmetry;
     }

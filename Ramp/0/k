@@ -31,12 +31,12 @@ boundaryField
     {
         type            zeroGradient;
     }
-    "(bot|top)"
+    bot
     {
         type            fixedValue;
         value           uniform 1e-16;
     }
-    "sym.*"
+    "(sym.*|top)"
     {
         type symmetry;
     }
