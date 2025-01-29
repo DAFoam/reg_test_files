@@ -34,7 +34,7 @@ solvers
         tolerance       1e-10;
     }
 
-    "(U|T|e|h|nuTilda|k|omega|epsilon)"
+    "(U|T|e|h|nuTilda|k|omega|epsilon|rho)"
     {
         solver          smoothSolver;
         smoother        GaussSeidel;
@@ -44,7 +44,7 @@ solvers
         minIter          1;
     }
 
-    "(U|T|e|h|nuTilda|k|omega|epsilon)Final"
+    "(U|T|e|h|nuTilda|k|omega|epsilon|rho)Final"
     {
         $U;
         //relTol          0;
