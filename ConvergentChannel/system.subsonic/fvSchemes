@@ -30,6 +30,8 @@ divSchemes
     default                                             none;
     div(phi,U)                                          bounded Gauss linearUpwindV grad(U);
     div(phi,e)                                          bounded Gauss upwind;
+    div(phi,ReThetat)                                         bounded Gauss upwind;
+    div(phi,gammaInt)                                          bounded Gauss upwind;
     div(phi,h)                                          bounded Gauss upwind;
     div(pc)                                             bounded Gauss upwind;
     div(((rho*nuEff)*dev2(T(grad(U)))))                 Gauss linear;

@@ -113,6 +113,8 @@ relaxationFactors
         k                              0.70;
         omega                          0.70;
         epsilon                        0.70;
+        ReThetat                        0.70;
+        gammaInt                        0.70;
     }
 
 }
