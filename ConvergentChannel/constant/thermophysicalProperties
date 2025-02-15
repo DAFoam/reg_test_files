@@ -36,6 +36,7 @@ mixture
     { 
         Cp                  1005.000000; 
         Hf                  0.000000; 
+        gamma               1.4;
     } 
     transport 
     { 
