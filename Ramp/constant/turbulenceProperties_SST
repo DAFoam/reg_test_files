@@ -21,6 +21,7 @@ RAS
     RASModel             kOmegaSST;
     turbulence           on;
     printCoeffs          off;
+    Prt                  1.0;
 } 
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

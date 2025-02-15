@@ -21,22 +21,22 @@ FoamFile
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          160;
-        startFace       1648;
+        nFaces          60;
+        startFace       432;
     }
     channel_inner
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          160;
-        startFace       1808;
+        nFaces          60;
+        startFace       492;
     }
     channel_sides
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          224;
-        startFace       1968;
+        nFaces          96;
+        startFace       552;
     }
 )
 
