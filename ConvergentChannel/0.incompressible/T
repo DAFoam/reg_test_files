@@ -32,7 +32,7 @@ boundaryField
     }
     walls
     {
-        type            fixedValue;
+        type            fixedValue ;
         value           uniform 305.0;
     }
 }
