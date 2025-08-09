@@ -2314,7 +2314,7 @@ boundaryField
     }
     defaultFaces
     {
-        type            empty;
+        type            symmetry;
     }
 }
 
