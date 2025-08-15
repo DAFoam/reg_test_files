@@ -67,9 +67,10 @@ solvers
 PIMPLE
 {
     momentumPredictor   yes;
-    nOuterCorrectors    10;
+    nOuterCorrectors    1;
     nCorrectors         2;
     nNonOrthogonalCorrectors 0;
+    turbOnFinalIterOnly false;
 }
 
 relaxationFactors

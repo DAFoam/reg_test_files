@@ -22,24 +22,27 @@ boundaryField
 {
     leftWall
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform 0;
     }
 
     rightWall
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform 0;
     }
 
     lowerWall
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform 0;
     }
 
     atmosphere
     {
         type            inletOutlet;
-        inletValue      uniform 0;
-        value           uniform 0;
+        inletValue      $internalField;
+        value           $internalField;
     }
 
     defaultFaces
