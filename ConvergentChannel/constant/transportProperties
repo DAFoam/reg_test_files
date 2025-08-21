@@ -21,4 +21,8 @@ nu 0.0000150000000000;
 Pr 0.7;
 Prt 1.0;
 Cp 1004.0;
+alphaPorosityFluid 0.0;
+alphaPorositySolid 1e5;
+diffusivitySolid 1.4e-4;
+pCoeff 2.0;
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
