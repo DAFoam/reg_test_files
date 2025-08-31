@@ -38,7 +38,7 @@ divSchemes
 
 laplacianSchemes
 {
-    default                     Gauss linear correct;
+    default                     Gauss linear corrected;
    laplacian(muEff,U)          Gauss linear compact;
    laplacian(alphaEff,e)       Gauss linear compact;
 }
