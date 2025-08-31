@@ -24,7 +24,7 @@ boundaryField
 {
     walls
     {
-        type            slip;
+        type            noSlip;
     }
     inlet
     {
