@@ -15,8 +15,11 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-fluxScheme           AUSMPlusUp;
+fluxScheme           JST; // AUSMPlusUp;
 lowMachAusm          false;
+jst_k2 0.5;
+jst_k4 0.02;
+sensorName pressure;
 
 ddtSchemes
 {
