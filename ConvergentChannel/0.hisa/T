@@ -14,6 +14,8 @@ FoamFile
     object      T;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+#include         "include/freestreamConditions"
+
 dimensions      [0 0 0 1 0 0 0];
 
 internalField   uniform 300;
@@ -22,17 +24,19 @@ boundaryField
 {
     walls
     {
-        type            zeroGradient;
-        value           uniform 0;
+        type            characteristicWallTemperature;
+        value           $internalField;
     }
     inlet
     {
-        type            fixedValue;
+        type            characteristicFarfieldTemperature;
+        #include        "include/freestreamConditions"
         value           $internalField;
     }
     outlet
     {
-        type            zeroGradient;
+        type            characteristicFarfieldTemperature;
+        #include        "include/freestreamConditions"
         value           $internalField;
     }
 }

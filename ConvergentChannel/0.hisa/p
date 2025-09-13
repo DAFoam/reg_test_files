@@ -15,6 +15,8 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+#include         "include/freestreamConditions"
+
 dimensions      [1 -1 -2 0 0 0 0];
 
 internalField   uniform 101325;
@@ -23,16 +25,19 @@ boundaryField
 {
     walls
     {
-        type            zeroGradient;
-        value           uniform 0;
+        type            characteristicWallPressure;
+        value           $internalField;
     }
     inlet
     {
-        type            zeroGradient;
+        type            characteristicFarfieldPressure;
+        #include        "include/freestreamConditions"
+        value           $internalField;
     }
     outlet
     {
-        type            fixedValue;
+        type            characteristicFarfieldPressure;
+        #include        "include/freestreamConditions"
         value           $internalField;
     }
 }
