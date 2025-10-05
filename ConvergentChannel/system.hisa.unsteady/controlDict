@@ -20,10 +20,10 @@ application     hisa;
 startFrom       latestTime;
 startTime       0;
 stopAt          endTime;
-endTime         1000;
-deltaT          1;
+endTime         1e-3;
+deltaT          1e-4;
 writeControl    timeStep;
-writeInterval   1000;
+writeInterval   10;
 purgeWrite      0;
 writeFormat     ascii;
 writePrecision  16;
@@ -31,9 +31,3 @@ writeCompression on;
 timeFormat      general;
 timePrecision   8;
 runTimeModifiable false;
-HisaPrintInterval  100;
-
-DebugSwitches
-{
-    SolverPerformance 0;
-}

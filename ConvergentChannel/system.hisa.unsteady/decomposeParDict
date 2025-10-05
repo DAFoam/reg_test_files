@@ -11,29 +11,22 @@ FoamFile
     format      ascii;
     class       dictionary;
     location    "system";
-    object      controlDict;
+    object      decomposeParDict;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+numberOfSubdomains     4;
 
-application     hisa;
-startFrom       latestTime;
-startTime       0;
-stopAt          endTime;
-endTime         1000;
-deltaT          1;
-writeControl    timeStep;
-writeInterval   1000;
-purgeWrite      0;
-writeFormat     ascii;
-writePrecision  16;
-writeCompression on;
-timeFormat      general;
-timePrecision   8;
-runTimeModifiable false;
-HisaPrintInterval  100;
+method                 scotch;
 
-DebugSwitches
-{
-    SolverPerformance 0;
-}
+simpleCoeffs 
+{ 
+    n                  (2 2 1);
+    delta              0.001;
+} 
+
+distributed            false;
+
+roots();
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

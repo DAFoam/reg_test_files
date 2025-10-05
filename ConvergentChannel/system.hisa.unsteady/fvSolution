@@ -1,0 +1,80 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+|                                                                             |
+|    HiSA: High Speed Aerodynamic solver                                      |
+|    Copyright (C) 2014-2017 Johan Heyns - CSIR, South Africa                 |
+|    Copyright (C) 2014-2017 Oliver Oxtoby - CSIR, South Africa               |
+|                                                                             |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    nuTilda
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       0;
+        relTol          1e-1;
+        minIter         1;
+    }
+
+    nuTildaFinal
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-10;
+        relTol          0;
+        minIter         1;
+    }
+
+    yPsi
+    {
+        solver          GAMG;
+        smoother        GaussSeidel;
+        cacheAgglomeration true;
+        nCellsInCoarsestLevel 10;
+        agglomerator    faceAreaPair;
+        mergeLevels     1;
+        tolerance       0;
+        relTol          0;
+    }
+}
+
+flowSolver
+{
+    solver            GMRES;
+    GMRES
+    {
+        inviscidJacobian  LaxFriedrich;
+        viscousJacobian   laplacian;
+        preconditioner    LUSGS;
+
+        maxIter           10;
+        nKrylov           8;
+        solverTolRel      1e-1 (1e-1 1e-1 1e-1) 1e-1;
+    }
+}
+
+pseudoTime
+{
+    nPseudoCorr        5;
+    nPseudoCorrMin     5;
+    
+    pseudoTol          1e-3 (1e-3 1e-3 1e-3) 1e-3;
+    pseudoTolRel       1e-2 (1e-2 1e-2 1e-2) 1e-2;
+
+    pseudoCoNum       1e6;
+    pseudoCoNumMin    1e6;
+    pseudoCoNumMax    1e6;
+    localTimestepping true;
+}
+
+// ************************************************************************* //
