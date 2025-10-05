@@ -17,7 +17,7 @@ FoamFile
 
 
 application     hisa;
-startFrom       latestTime;
+startFrom       startTime;
 startTime       0;
 stopAt          endTime;
 endTime         1e-3;
