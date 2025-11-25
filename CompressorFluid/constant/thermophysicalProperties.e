@@ -23,7 +23,7 @@ thermoType
     energy                sensibleInternalEnergy;
     thermo                hConst;
     type                  hePsiThermo;
-    transport             const;
+    transport             sutherland;
 } 
 
 mixture 
@@ -36,13 +36,15 @@ mixture
     { 
         Cp                  1005.000000; 
         Hf                  0.000000;
-	gamma               1.4;
+	    gamma               1.4;
     } 
     transport 
     { 
         mu                  0.000018; 
         Pr                  0.700000; 
         TRef                300.000000; 
+            As          1.4792e-06;
+    Ts          116;
     } 
 } 
 
