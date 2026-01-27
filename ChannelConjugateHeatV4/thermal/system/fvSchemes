@@ -35,6 +35,7 @@ laplacianSchemes
 {
     default         none;
     laplacian(k,T) Gauss linear corrected;
+    laplacian(kappa,T) Gauss linear corrected;
 }
 
 interpolationSchemes
