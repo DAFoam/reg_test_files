@@ -1,0 +1,75 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+|       o          |                                                          |
+|    o     o       | HELYX-OS                                                  |
+|   o   O   o      | Version: v2.3.1                                           |
+|    o     o       | Web:     http://www.engys.com                            |
+|       o          |                                                          |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version 2.0;
+    format ascii;
+    class dictionary;
+    location system;
+    object blockMeshDict;
+}
+
+Lx 25.5;
+LxNeg -25.5;
+Nx 25;
+Nz 12;
+
+convertToMeters 1;
+
+vertices  
+(
+    ($LxNeg $LxNeg  0)
+    ($Lx $LxNeg  0)
+    ($Lx $Lx  0)
+    ($LxNeg $Lx  0)
+    ($LxNeg $LxNeg  $Lx)
+    ($Lx $LxNeg  $Lx)
+    ($Lx $Lx  $Lx)
+    ($LxNeg $Lx  $Lx)
+);
+
+blocks  
+(
+    hex ( 0 1 2 3 4 5 6 7) ($Nx $Nx $Nz) simpleGrading (1 1 1)
+);
+
+edges  
+(
+);
+
+patches  
+( 
+  patch farfield_inlet
+  (
+      (0 4 7 3)
+  ) 
+  patch farfield_outlet
+  (
+      (1 2 6 5)
+  ) 
+  patch farfield_bot
+  (
+      (0 1 5 4)
+  ) 
+  patch farfield_top
+  (
+      (3 7 6 2)
+  ) 
+  symmetry sym
+  (
+      (0 3 2 1)
+  ) 
+  patch farfield_front
+  (
+      (4 5 6 7)
+  )
+);
+
+mergePatchPairs  
+(
+);
