@@ -75,18 +75,18 @@
         <UseModeExportFlag Value="0.000000000000000000e+00" ID="WBOESCSMCCC"/>
       </ExportFlag>
       <BBox>
-        <ScaleIndependentX_Len Value="9.801876543561853783e-01" ID="MVUIKQBPCLV"/>
+        <ScaleIndependentX_Len Value="9.801876543561851562e-01" ID="MVUIKQBPCLV"/>
         <ScaleIndependentX_Min Value="0.000000000000000000e+00" ID="DBSUQHNMPUD"/>
         <ScaleIndependentY_Len Value="1.202285750867271574e-01" ID="DVBNFZRIOJG"/>
         <ScaleIndependentY_Min Value="-6.011428754336359953e-02" ID="DXACESMXCJA"/>
         <ScaleIndependentZ_Len Value="1.000000000000000056e-01" ID="GTRPLOAXDLV"/>
-        <ScaleIndependentZ_Min Value="-1.000000000000000056e-01" ID="EGPQOAICLGH"/>
-        <X_Len Value="9.801876543561853783e-01" ID="ZFSSLHFKSTO"/>
+        <ScaleIndependentZ_Min Value="0.000000000000000000e+00" ID="EGPQOAICLGH"/>
+        <X_Len Value="9.801876543561851562e-01" ID="ZFSSLHFKSTO"/>
         <X_Min Value="0.000000000000000000e+00" ID="OCYFEGXWAIU"/>
         <Y_Len Value="1.202285750867271574e-01" ID="POTONLAPCDI"/>
         <Y_Min Value="-6.011428754336359953e-02" ID="LJAJAUWGZPJ"/>
         <Z_Len Value="1.000000000000000056e-01" ID="IYKYSXNAUAK"/>
-        <Z_Min Value="-1.000000000000000056e-01" ID="EIMFYIDKFGI"/>
+        <Z_Min Value="0.000000000000000000e+00" ID="EIMFYIDKFGI"/>
       </BBox>
       <Design>
         <Working_XDDM_Type Value="0.000000000000000000e+00" ID="EVHQEIFZBKO"/>
@@ -156,14 +156,14 @@
         <CORX Value="0.000000000000000000e+00" ID="SOYYIOKNPAN"/>
         <CORY Value="0.000000000000000000e+00" ID="DVZJDKNLGSE"/>
         <CORZ Value="0.000000000000000000e+00" ID="GCSPSIGDXGR"/>
-        <PanX Value="0.000000000000000000e+00" ID="AICTVAMLQDT"/>
-        <PanY Value="0.000000000000000000e+00" ID="HEOQXRDERLO"/>
-        <RotationX Value="0.000000000000000000e+00" ID="BHTFZBQMBHG"/>
-        <RotationY Value="0.000000000000000000e+00" ID="KGGENMWLJSB"/>
-        <RotationZ Value="0.000000000000000000e+00" ID="EXDIEKZNUWS"/>
+        <PanX Value="-2.264766991138458252e-01" ID="AICTVAMLQDT"/>
+        <PanY Value="-9.933814406394958496e-02" ID="HEOQXRDERLO"/>
+        <RotationX Value="-6.262880487740662083e+00" ID="BHTFZBQMBHG"/>
+        <RotationY Value="9.019481315998527293e+01" ID="KGGENMWLJSB"/>
+        <RotationZ Value="3.327907433694574202e+00" ID="EXDIEKZNUWS"/>
         <ViewportX Value="1.805000000000000000e+03" ID="TMAHZQNZJSW"/>
         <ViewportY Value="1.271000000000000000e+03" ID="JQNJYXQJEZN"/>
-        <Zoom Value="1.799999999999999864e-02" ID="KOSRROEDNLL"/>
+        <Zoom Value="1.264776685275137424e-03" ID="KOSRROEDNLL"/>
       </AdjustView>
       <FitModel>
         <Select_Box_Flag Value="0.000000000000000000e+00" ID="CWWRDHDNTJL"/>
@@ -400,8 +400,8 @@
           <Y_Rel_Location Value="0.000000000000000000e+00" ID="QBTDASWOIDY"/>
           <Y_Rel_Rotation Value="0.000000000000000000e+00" ID="CAEIMOWJXOZ"/>
           <Y_Rotation Value="0.000000000000000000e+00" ID="OWLLQUPBEJO"/>
-          <Z_Location Value="0.000000000000000000e+00" ID="SIEUQKYWOOR"/>
-          <Z_Rel_Location Value="0.000000000000000000e+00" ID="UWPNMWFUMOD"/>
+          <Z_Location Value="1.000000000000000056e-01" ID="SIEUQKYWOOR"/>
+          <Z_Rel_Location Value="1.000000000000000056e-01" ID="UWPNMWFUMOD"/>
           <Z_Rel_Rotation Value="0.000000000000000000e+00" ID="JHJURCPJUMN"/>
           <Z_Rotation Value="0.000000000000000000e+00" ID="FFIGPKCLQKG"/>
         </XForm>
@@ -418,12 +418,12 @@
           <Wake Value="0.000000000000000000e+00" ID="HEEZEZHZPFZ"/>
         </Shape>
         <BBox>
-          <X_Len Value="9.801876543561853783e-01" ID="RZNBMFAOFJE"/>
+          <X_Len Value="9.801876543561851562e-01" ID="RZNBMFAOFJE"/>
           <X_Min Value="0.000000000000000000e+00" ID="QLBZEOPXZVS"/>
           <Y_Len Value="1.202285750867271574e-01" ID="HHFLRELVMJX"/>
           <Y_Min Value="-6.011428754336359953e-02" ID="ZOYGVJDTEPW"/>
           <Z_Len Value="1.000000000000000056e-01" ID="MNFCRANBNPG"/>
-          <Z_Min Value="-1.000000000000000056e-01" ID="XDLZASQHVPG"/>
+          <Z_Min Value="0.000000000000000000e+00" ID="XDLZASQHVPG"/>
         </BBox>
         <Attach>
           <Eta_Attach_Location Value="0.000000000000000000e+00" ID="MSSJJZRVFAA"/>
@@ -501,7 +501,7 @@
           <CurvedArea Value="9.801876543561853505e-02" ID="HLSTVDTUGCL"/>
           <LECluster Value="2.000000000000000111e-01" ID="ZKWCXMMHMWP"/>
           <MAC Value="9.801876543561851562e-01" ID="WSRABDHSYPC"/>
-          <MaxGrowth Value="1.143582367114516440e+00" ID="MCJETEPLYOP"/>
+          <MaxGrowth Value="1.143582367114503562e+00" ID="MCJETEPLYOP"/>
           <RelativeDihedralFlag Value="0.000000000000000000e+00" ID="QTKKGAOPJGY"/>
           <RelativeTwistFlag Value="0.000000000000000000e+00" ID="TXNRLWJPXHK"/>
           <RotateAirfoilMatchDideralFlag Value="1.000000000000000000e+00" ID="JVOTKHKKRKL"/>
