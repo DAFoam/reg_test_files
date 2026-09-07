@@ -75,18 +75,18 @@
         <UseModeExportFlag Value="0.000000000000000000e+00" ID="WBOESCSMCCC"/>
       </ExportFlag>
       <BBox>
-        <ScaleIndependentX_Len Value="1.000000000000000000e+00" ID="MVUIKQBPCLV"/>
+        <ScaleIndependentX_Len Value="9.801876543561853783e-01" ID="MVUIKQBPCLV"/>
         <ScaleIndependentX_Min Value="0.000000000000000000e+00" ID="DBSUQHNMPUD"/>
-        <ScaleIndependentY_Len Value="1.194198367685692930e-01" ID="DVBNFZRIOJG"/>
-        <ScaleIndependentY_Min Value="-5.970991838428468118e-02" ID="DXACESMXCJA"/>
+        <ScaleIndependentY_Len Value="1.202285750867271574e-01" ID="DVBNFZRIOJG"/>
+        <ScaleIndependentY_Min Value="-6.011428754336359953e-02" ID="DXACESMXCJA"/>
         <ScaleIndependentZ_Len Value="1.000000000000000056e-01" ID="GTRPLOAXDLV"/>
-        <ScaleIndependentZ_Min Value="0.000000000000000000e+00" ID="EGPQOAICLGH"/>
-        <X_Len Value="1.000000000000000000e+00" ID="ZFSSLHFKSTO"/>
+        <ScaleIndependentZ_Min Value="-1.000000000000000056e-01" ID="EGPQOAICLGH"/>
+        <X_Len Value="9.801876543561853783e-01" ID="ZFSSLHFKSTO"/>
         <X_Min Value="0.000000000000000000e+00" ID="OCYFEGXWAIU"/>
-        <Y_Len Value="1.194198367685692930e-01" ID="POTONLAPCDI"/>
-        <Y_Min Value="-5.970991838428468118e-02" ID="LJAJAUWGZPJ"/>
+        <Y_Len Value="1.202285750867271574e-01" ID="POTONLAPCDI"/>
+        <Y_Min Value="-6.011428754336359953e-02" ID="LJAJAUWGZPJ"/>
         <Z_Len Value="1.000000000000000056e-01" ID="IYKYSXNAUAK"/>
-        <Z_Min Value="0.000000000000000000e+00" ID="EIMFYIDKFGI"/>
+        <Z_Min Value="-1.000000000000000056e-01" ID="EIMFYIDKFGI"/>
       </BBox>
       <Design>
         <Working_XDDM_Type Value="0.000000000000000000e+00" ID="EVHQEIFZBKO"/>
@@ -156,14 +156,14 @@
         <CORX Value="0.000000000000000000e+00" ID="SOYYIOKNPAN"/>
         <CORY Value="0.000000000000000000e+00" ID="DVZJDKNLGSE"/>
         <CORZ Value="0.000000000000000000e+00" ID="GCSPSIGDXGR"/>
-        <PanX Value="-5.942919254302978516e-01" ID="AICTVAMLQDT"/>
-        <PanY Value="1.742407977581024170e-01" ID="HEOQXRDERLO"/>
-        <RotationX Value="-1.552814650253155548e+01" ID="BHTFZBQMBHG"/>
-        <RotationY Value="1.929349318817618553e+01" ID="KGGENMWLJSB"/>
-        <RotationZ Value="-2.629300530903448951e+00" ID="EXDIEKZNUWS"/>
+        <PanX Value="0.000000000000000000e+00" ID="AICTVAMLQDT"/>
+        <PanY Value="0.000000000000000000e+00" ID="HEOQXRDERLO"/>
+        <RotationX Value="0.000000000000000000e+00" ID="BHTFZBQMBHG"/>
+        <RotationY Value="0.000000000000000000e+00" ID="KGGENMWLJSB"/>
+        <RotationZ Value="0.000000000000000000e+00" ID="EXDIEKZNUWS"/>
         <ViewportX Value="1.805000000000000000e+03" ID="TMAHZQNZJSW"/>
         <ViewportY Value="1.271000000000000000e+03" ID="JQNJYXQJEZN"/>
-        <Zoom Value="9.563529747538268566e-04" ID="KOSRROEDNLL"/>
+        <Zoom Value="1.799999999999999864e-02" ID="KOSRROEDNLL"/>
       </AdjustView>
       <FitModel>
         <Select_Box_Flag Value="0.000000000000000000e+00" ID="CWWRDHDNTJL"/>
@@ -400,8 +400,8 @@
           <Y_Rel_Location Value="0.000000000000000000e+00" ID="QBTDASWOIDY"/>
           <Y_Rel_Rotation Value="0.000000000000000000e+00" ID="CAEIMOWJXOZ"/>
           <Y_Rotation Value="0.000000000000000000e+00" ID="OWLLQUPBEJO"/>
-          <Z_Location Value="1.000000000000000056e-01" ID="SIEUQKYWOOR"/>
-          <Z_Rel_Location Value="1.000000000000000056e-01" ID="UWPNMWFUMOD"/>
+          <Z_Location Value="0.000000000000000000e+00" ID="SIEUQKYWOOR"/>
+          <Z_Rel_Location Value="0.000000000000000000e+00" ID="UWPNMWFUMOD"/>
           <Z_Rel_Rotation Value="0.000000000000000000e+00" ID="JHJURCPJUMN"/>
           <Z_Rotation Value="0.000000000000000000e+00" ID="FFIGPKCLQKG"/>
         </XForm>
@@ -418,12 +418,12 @@
           <Wake Value="0.000000000000000000e+00" ID="HEEZEZHZPFZ"/>
         </Shape>
         <BBox>
-          <X_Len Value="1.000000000000000000e+00" ID="RZNBMFAOFJE"/>
+          <X_Len Value="9.801876543561853783e-01" ID="RZNBMFAOFJE"/>
           <X_Min Value="0.000000000000000000e+00" ID="QLBZEOPXZVS"/>
-          <Y_Len Value="1.194198367685692930e-01" ID="HHFLRELVMJX"/>
-          <Y_Min Value="-5.970991838428468118e-02" ID="ZOYGVJDTEPW"/>
+          <Y_Len Value="1.202285750867271574e-01" ID="HHFLRELVMJX"/>
+          <Y_Min Value="-6.011428754336359953e-02" ID="ZOYGVJDTEPW"/>
           <Z_Len Value="1.000000000000000056e-01" ID="MNFCRANBNPG"/>
-          <Z_Min Value="0.000000000000000000e+00" ID="XDLZASQHVPG"/>
+          <Z_Min Value="-1.000000000000000056e-01" ID="XDLZASQHVPG"/>
         </BBox>
         <Attach>
           <Eta_Attach_Location Value="0.000000000000000000e+00" ID="MSSJJZRVFAA"/>
@@ -494,18 +494,18 @@
         </ParasiteDragProps>
         <Index>
           <ActiveAirfoil Value="1.000000000000000000e+00" ID="NAQTTOXBJEP"/>
-          <ActiveXSec Value="0.000000000000000000e+00" ID="NBBNTFIVWLN"/>
+          <ActiveXSec Value="1.000000000000000000e+00" ID="NBBNTFIVWLN"/>
         </Index>
         <WingGeom>
           <CorrectAirfoilthicknessFlag Value="1.000000000000000000e+00" ID="VZUZITHZWAY"/>
-          <CurvedArea Value="1.000000000000000056e-01" ID="HLSTVDTUGCL"/>
+          <CurvedArea Value="9.801876543561853505e-02" ID="HLSTVDTUGCL"/>
           <LECluster Value="2.000000000000000111e-01" ID="ZKWCXMMHMWP"/>
-          <MAC Value="1.000000000000000000e+00" ID="WSRABDHSYPC"/>
-          <MaxGrowth Value="1.143582367114503562e+00" ID="MCJETEPLYOP"/>
+          <MAC Value="9.801876543561851562e-01" ID="WSRABDHSYPC"/>
+          <MaxGrowth Value="1.143582367114516440e+00" ID="MCJETEPLYOP"/>
           <RelativeDihedralFlag Value="0.000000000000000000e+00" ID="QTKKGAOPJGY"/>
           <RelativeTwistFlag Value="0.000000000000000000e+00" ID="TXNRLWJPXHK"/>
           <RotateAirfoilMatchDideralFlag Value="1.000000000000000000e+00" ID="JVOTKHKKRKL"/>
-          <SmallPanelW Value="4.357830731298572083e-03" ID="PTTBDKVAOEL"/>
+          <SmallPanelW Value="4.273631645832362373e-03" ID="PTTBDKVAOEL"/>
           <TECluster Value="2.000000000000000111e-01" ID="ERMLSGGYSSN"/>
           <TotalAR Value="1.000000000000000194e-01" ID="GVEJFRXLWIJ"/>
           <TotalArea Value="1.000000000000000056e-01" ID="GFIZEUDXTVS"/>
@@ -617,9 +617,9 @@
                     <LE_Close_Thick_Chord Value="0.000000000000000000e+00" ID="BAFPMHUKGRC"/>
                     <LE_Close_Type Value="0.000000000000000000e+00" ID="MAEKHBIJTVD"/>
                     <TE_Close_AbsRel Value="1.000000000000000000e+00" ID="PFOPIGGLJBV"/>
-                    <TE_Close_Thick Value="2.220446049250313081e-16" ID="RWBCPKCYXZM"/>
-                    <TE_Close_Thick_Chord Value="2.220446049250313081e-16" ID="NSWNQLHXSKY"/>
-                    <TE_Close_Type Value="0.000000000000000000e+00" ID="PJIBPYGUKHF"/>
+                    <TE_Close_Thick Value="2.519999999999955435e-03" ID="RWBCPKCYXZM"/>
+                    <TE_Close_Thick_Chord Value="2.519999999999955435e-03" ID="NSWNQLHXSKY"/>
+                    <TE_Close_Type Value="3.000000000000000000e+00" ID="PJIBPYGUKHF"/>
                   </Close>
                   <Trim>
                     <LE_Trim_AbsRel Value="0.000000000000000000e+00" ID="NFJNJLULVWT"/>
@@ -629,11 +629,11 @@
                     <LE_Trim_X Value="0.000000000000000000e+00" ID="GPPOUGJGEDU"/>
                     <LE_Trim_X_Chord Value="0.000000000000000000e+00" ID="WNNWVULXRHS"/>
                     <TE_Trim_AbsRel Value="1.000000000000000000e+00" ID="FRYACOWJRMQ"/>
-                    <TE_Trim_Thick Value="2.220446049250313081e-16" ID="QNTBBYMUGKA"/>
-                    <TE_Trim_Thick_Chord Value="2.220446049250313081e-16" ID="BJYAGELNHXM"/>
-                    <TE_Trim_Type Value="0.000000000000000000e+00" ID="LXXKSVLYEDA"/>
-                    <TE_Trim_X Value="0.000000000000000000e+00" ID="XMDXXCPAXVG"/>
-                    <TE_Trim_X_Chord Value="0.000000000000000000e+00" ID="MWFPGUCXYFK"/>
+                    <TE_Trim_Thick Value="7.986611414766371653e-03" ID="QNTBBYMUGKA"/>
+                    <TE_Trim_Thick_Chord Value="7.986611414766371653e-03" ID="BJYAGELNHXM"/>
+                    <TE_Trim_Type Value="1.000000000000000000e+00" ID="LXXKSVLYEDA"/>
+                    <TE_Trim_X Value="2.000000000000014613e-02" ID="XMDXXCPAXVG"/>
+                    <TE_Trim_X_Chord Value="2.000000000000000042e-02" ID="MWFPGUCXYFK"/>
                   </Trim>
                   <Cap>
                     <LE_Cap_Length Value="1.000000000000000000e+00" ID="YSZPLQRWODE"/>
@@ -815,9 +815,9 @@
                     <LE_Close_Thick_Chord Value="0.000000000000000000e+00" ID="MALPNXOSVXS"/>
                     <LE_Close_Type Value="0.000000000000000000e+00" ID="HACCECMSPPT"/>
                     <TE_Close_AbsRel Value="1.000000000000000000e+00" ID="ZTPRTASPPDH"/>
-                    <TE_Close_Thick Value="2.220446049250313081e-16" ID="PUCEWVWYDJY"/>
-                    <TE_Close_Thick_Chord Value="2.220446049250313081e-16" ID="HXCZAJJLQOG"/>
-                    <TE_Close_Type Value="0.000000000000000000e+00" ID="ZSKUYNRHWNE"/>
+                    <TE_Close_Thick Value="2.519999999999955435e-03" ID="PUCEWVWYDJY"/>
+                    <TE_Close_Thick_Chord Value="2.519999999999955435e-03" ID="HXCZAJJLQOG"/>
+                    <TE_Close_Type Value="3.000000000000000000e+00" ID="ZSKUYNRHWNE"/>
                   </Close>
                   <Trim>
                     <LE_Trim_AbsRel Value="0.000000000000000000e+00" ID="IQEYFNSIGPM"/>
@@ -827,11 +827,11 @@
                     <LE_Trim_X Value="0.000000000000000000e+00" ID="ILXGUWCUNTX"/>
                     <LE_Trim_X_Chord Value="0.000000000000000000e+00" ID="VJQIUHNZHWY"/>
                     <TE_Trim_AbsRel Value="1.000000000000000000e+00" ID="FPFDTWHCFGO"/>
-                    <TE_Trim_Thick Value="2.220446049250313081e-16" ID="TQZMGKMYMVW"/>
-                    <TE_Trim_Thick_Chord Value="2.220446049250313081e-16" ID="WQKYMCIOVTZ"/>
-                    <TE_Trim_Type Value="0.000000000000000000e+00" ID="WRULPYPVPMN"/>
-                    <TE_Trim_X Value="0.000000000000000000e+00" ID="ADQFLZBXQRF"/>
-                    <TE_Trim_X_Chord Value="0.000000000000000000e+00" ID="BHDJRQCNQSM"/>
+                    <TE_Trim_Thick Value="7.986611414766371653e-03" ID="TQZMGKMYMVW"/>
+                    <TE_Trim_Thick_Chord Value="7.986611414766371653e-03" ID="WQKYMCIOVTZ"/>
+                    <TE_Trim_Type Value="1.000000000000000000e+00" ID="WRULPYPVPMN"/>
+                    <TE_Trim_X Value="2.000000000000014613e-02" ID="ADQFLZBXQRF"/>
+                    <TE_Trim_X_Chord Value="2.000000000000000042e-02" ID="BHDJRQCNQSM"/>
                   </Trim>
                   <Cap>
                     <LE_Cap_Length Value="1.000000000000000000e+00" ID="KEMSEZQWYIE"/>
